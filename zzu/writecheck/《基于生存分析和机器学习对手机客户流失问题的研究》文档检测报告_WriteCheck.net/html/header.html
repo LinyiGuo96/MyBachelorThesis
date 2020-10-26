@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+	<link href="img/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script type="text/javascript">
+		var setCurrent = function(obj){
+	  		var lis=obj.parentNode.childNodes;
+	  		for(var i=0;i<lis.length;i++){
+	  			lis.item(i).className = '';
+	  		} 
+	  		obj.className = 'current';
+	  	}
+	</script>
+</head>
+
+<body>
+	<div class="toolbar">
+    	<div class="info">报告编号：fca03b92-48a1-4681-b06f-a81875522540</div>
+        <ul class="menu">
+			<li>© 检测报告由WriteCheck论文检测系统生成，结果仅供参考</li>
+        </ul>
+    </div>
+    <div class="line"></div>
+    
+	<div class="header">
+    	<div class="logo"><a href="http://www.WriteCheck.net/" target="_blank"><img src="img/logo.png"/></a></div>
+        <div class="title">《
+	        	基于生存分析和机器学习对手机客户流失问题的研究
+        》检测报告</div>
+        <div class="similarity">
+            <span>总相似率</span>
+            <strong>25.8%</strong>
+        </div>
+        
+        <div class="nav">
+			<ul class="menu">
+				<li class="current" onclick="setCurrent(this)"><a href="main-report.html" target="mainFrame">综合评估</a></li>
+				<li onclick="setCurrent(this)"><a href="full-text-report.html" target="mainFrame">详细报告</a></li>
+				<li onclick="setCurrent(this)"><a href="similarity-report.html" target="mainFrame">相似片段</a></li>
+				<li onclick="setCurrent(this)"><a href="quote-report.html" target="mainFrame">引用片段</a></li>
+			</ul>
+		</div>
+    </div>
+</body>
+</html>
